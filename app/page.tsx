@@ -22,6 +22,8 @@ const Form = () => {
   const searchParams = useSearchParams();
   const formId = searchParams.get("formId") || "default"; // Default to "default" if formId is not provided
 
+  console.log('first',formId)
+
   const [formData, setFormData] = useState<FormData>({
     name: "",
     phoneNumber: "",
