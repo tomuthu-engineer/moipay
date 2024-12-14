@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useState, ChangeEvent, FormEvent } from "react";
 
@@ -10,6 +11,14 @@ interface FormData {
 }
 
 export default function Home() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Form />
+    </Suspense>
+  );
+}
+
+const Form = () => {
   const searchParams = useSearchParams();
   const formId = searchParams.get("formId") || "default"; // Default to "default" if formId is not provided
 
@@ -52,7 +61,6 @@ export default function Home() {
 
   return (
     <div className="flex justify-center items-center min-h-screen sm:bg-[#FFB6C1] bg-[#F8E1E1]">
-      {/* On mobile devices and above, the background is solid pink for desktop and light pink for mobile */}
       <div className="w-full h-screen sm:w-full sm:max-w-lg sm:h-auto p-8 bg-white rounded-xl shadow-lg border border-gray-200">
         <h1 className="text-3xl font-semibold text-center text-[#F84464] mb-6">
           Welcome to Moi Book
@@ -60,7 +68,10 @@ export default function Home() {
         <form onSubmit={handleSubmit} className="space-y-6 mt-6">
           {/* Name Input */}
           <div className="relative">
-            <label htmlFor="name" className="text-lg font-medium text-gray-700 mb-2 block">
+            <label
+              htmlFor="name"
+              className="text-lg font-medium text-gray-700 mb-2 block"
+            >
               Name:
             </label>
             <input
@@ -77,7 +88,10 @@ export default function Home() {
 
           {/* Phone Number Input */}
           <div className="relative">
-            <label htmlFor="phoneNumber" className="text-lg font-medium text-gray-700 mb-2 block">
+            <label
+              htmlFor="phoneNumber"
+              className="text-lg font-medium text-gray-700 mb-2 block"
+            >
               Phone Number:
             </label>
             <input
@@ -94,7 +108,10 @@ export default function Home() {
 
           {/* Address Input */}
           <div className="relative">
-            <label htmlFor="address" className="text-lg font-medium text-gray-700 mb-2 block">
+            <label
+              htmlFor="address"
+              className="text-lg font-medium text-gray-700 mb-2 block"
+            >
               Address:
             </label>
             <textarea
@@ -119,4 +136,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
