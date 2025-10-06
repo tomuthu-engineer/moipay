@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hajiyar Traders - Building Materials Website
+
+A high-performance, conversion-optimized website for Hajiyar Traders, a 26-year-old building materials supplier in Tamil Nadu.
+
+## Features
+
+### Design System
+- **Color Palette**: Professional yellow (#FFD700) and gray theme
+- **Typography**: Clear hierarchy with Inter font family
+- **Animations**: Smooth Framer Motion animations throughout
+- **Responsive**: Mobile-first design with breakpoints for all devices
+
+### Pages
+
+#### Home Page (/)
+- Hero section with animated counter (26+ years)
+- Floating product icons
+- Trust indicators (5000+ customers, ISO certified)
+- Featured categories grid
+- Customer testimonials
+- Call-to-action banner
+
+#### About Page (/about)
+- Company timeline (1999-2025)
+- Mission and vision statements
+- Why choose us section
+- Achievement metrics
+- Core values showcase
+
+#### Products & Services (/products)
+- 9 product categories with detailed features
+- Interactive product cards with "View Details" and "Get Quote" buttons
+- Individual product detail pages (/products/[slug]) with:
+  - Comprehensive product overview
+  - Detailed specifications
+  - Available brands
+  - Applications
+  - Contact options
+- Product inquiry modal
+- Bulk order request form
+- Quick contact options
+
+#### Branches (/branches)
+- 5 branch locations across Tamil Nadu
+- Interactive branch cards with services
+- Google Maps integration
+- Branch-specific contact details
+- Operating hours
+
+#### Contact Page (/contact)
+- Multi-channel contact options (Phone, WhatsApp, Email)
+- Contact form with validation
+- Google Maps embed
+- Business hours display
+- 2-hour response time promise
+
+### Key Components
+
+- **Navbar**: Sticky navigation with mobile menu
+- **Footer**: Comprehensive footer with links and contact info
+- **ProductCard**: Reusable card component for products
+- **BranchCard**: Branch information display component
+- **Hero Section**: Engaging hero with animations
+- **Featured Categories**: Interactive category showcase
+- **Testimonials**: Customer review carousel
+- **CTA Banner**: Conversion-focused call-to-action
+
+### Technical Stack
+
+- **Framework**: Next.js 13 (App Router)
+- **UI Components**: shadcn/ui + Radix UI
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Forms**: React Hook Form + Zod
+- **Notifications**: Sonner
+
+### Performance Features
+
+- Static page generation
+- Image optimization with next/image
+- Route preloading
+- Optimized animations
+- Responsive images
+
+### Accessibility
+
+- WCAG 2.1 AA compliance
+- Keyboard navigation support
+- Screen reader optimized
+- Proper semantic HTML
+- Focus management
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Contact Information
 
-To learn more about Next.js, take a look at the following resources:
+- **Phone**: 094434 44177
+- **Email**: hajiyartradersrmd@gmail.com
+- **Location**: Rameswaram Road, Ramanathapuram, Tamil Nadu
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 Hajiyar Traders. All rights reserved.
